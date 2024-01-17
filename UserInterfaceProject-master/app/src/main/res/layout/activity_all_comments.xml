@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewComments"
+        android:layout_width="395dp"
+        android:layout_height="595dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="20dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/recyclerViewComments"
+        android:layout_marginTop="8dp"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/buttonEditComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="editComment"
+            android:text="Edit"
+            android:layout_marginStart="200dp" />
+
+        <Button
+            android:id="@+id/buttonDeleteComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="deleteComment"
+            android:text="Delete"
+            android:layout_marginStart="15dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

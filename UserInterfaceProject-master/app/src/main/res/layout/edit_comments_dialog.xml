@@ -1,0 +1,23 @@
+<!-- res/layout/edit_comments_dialog.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Add your UI components for editing comments here -->
+    <!-- For example, EditText, Button, etc. -->
+    <EditText
+        android:id="@+id/editTextUpdatedComment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Updated Comment" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save" />
+
+</LinearLayout>
